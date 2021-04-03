@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "20413604606",
+    "project_id": "auroratest-69f1e",
+    "storage_bucket": "auroratest-69f1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20413604606:android:309f832ed888def5a0fbaf",
+        "android_client_info": {
+          "package_name": "com.patrun.aurora_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20413604606-s0jldep72qe3lve0bptb9igtf309kct0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRBVNIbWlStaAVswQnyFymmu2OtFmmQ58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20413604606-s0jldep72qe3lve0bptb9igtf309kct0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
