@@ -2,6 +2,7 @@ import 'package:aurora_test/auth_screens/login_screen.dart';
 import 'package:aurora_test/components/background_wallpaper.dart';
 import 'package:aurora_test/components/primary_button.dart';
 import 'package:aurora_test/components/primary_text.dart';
+import 'package:aurora_test/components/primary_title.dart';
 import 'package:aurora_test/helper/auth_helper.dart';
 import 'package:aurora_test/stores/user_store.dart';
 import 'package:aurora_test/utils/constants.dart';
@@ -28,7 +29,34 @@ class _HomeState extends State<Home> {
       children: [
         BackgroundWallpaper(),
         Center(
-          child: PrimaryText(text: Constants.successfullyLoggedIn),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  PrimaryText(text: Constants.firstName + ":   "),
+                  PrimaryText(text: userStore.userModel.firstName)
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  PrimaryText(text: Constants.lastName + ":    "),
+                  PrimaryText(text: userStore.userModel.lastName),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  PrimaryText(text: Constants.phoneNumber + ":   "),
+                  PrimaryText(text: userStore.userModel.phoneNumber)
+                ],
+              ),
+              PrimaryText(text: Constants.successfullyLoggedIn),
+            ],
+          ),
         ),
         PositionedDirectional(
           bottom: SizeConfig.safeBlockVertical * 5,
